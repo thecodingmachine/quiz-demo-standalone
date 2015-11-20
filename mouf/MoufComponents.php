@@ -1857,7 +1857,7 @@ $moufManager->addComponentInstances(array (
           0 => '<code>ob_flush()</code>',
           1 => '<code>ob_end_flush()</code>',
           2 => '<code>ob_get_flush()</code>',
-          3 => '<code>ob_get_flush()</code>',
+          3 => '<code>ob_flush_cache()</code>',
         ),
         'parametertype' => 'primitive',
         'type' => 'string',
