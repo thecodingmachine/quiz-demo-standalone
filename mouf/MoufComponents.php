@@ -1242,6 +1242,40 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
+  'quiz.main.phpstandard' => 
+  array (
+    'class' => 'TheCodingMachine\\Quiz\\Model\\Quiz',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'PHP standard quiz',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 
+        array (
+          0 => 'quiz.phpstandard.q1',
+          1 => 'quiz.phpstandard.q2',
+          2 => 'quiz.phpstandard.q3',
+          3 => 'quiz.phpstandard.q4',
+          4 => 'quiz.phpstandard.q5',
+        ),
+        'parametertype' => 'object',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'quiz.phpfig.q1' => 
   array (
     'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
@@ -1749,6 +1783,261 @@ $moufManager->addComponentInstances(array (
       ),
     ),
   ),
+  'quiz.phpstandard.q1' => 
+  array (
+    'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'By default, what is the attribution order of variables in the $_REQUEST superglobal?',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 
+        array (
+          0 => 'GET - COOKIE - POST',
+          1 => 'POST - COOKIE - GET',
+          2 => 'POST - GET - COOKIE',
+          3 => 'GET - POST - COOKIE',
+        ),
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => '3',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => 'This can vary depending on your configuration... and this is why you should consider using PSR-7 Request objects insteads of relying on superglobals. They are <b>evil</b>!',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'quiz.phpstandard.q2' => 
+  array (
+    'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'Which PHP output buffering function sends data from the buffer to the browser and stops output buffering?',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 
+        array (
+          0 => '<code>ob_flush()</code>',
+          1 => '<code>ob_end_flush()</code>',
+          2 => '<code>ob_get_flush()</code>',
+          3 => '<code>ob_get_flush()</code>',
+        ),
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => '1',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => '<code>ob_end_flush()</code> sends data from the output buffer and closes the output buffering.<br /><code>ob_flush()</code> sends data from the output buffer.<br /><code>ob_get_flush()</code> empties the output buffer but returns its content as a character string and stops buffering.<br /><code>ob_flush_cache()</code> doesn\'t exist.',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'quiz.phpstandard.q3' => 
+  array (
+    'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'What is displayed if we evaluate this piece of code?<pre><code>$a = \'a\'.file_exists(__FILE__);<br />$a1 = \'The Coding Machine\';<br />$a2 = \'TCM\';<br />echo ${$a};</code></pre>',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 
+        array (
+          0 => 'Nothing',
+          1 => 'The Coding Machine',
+          2 => 'TCM',
+          3 => 'An error',
+        ),
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => '1',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => '<code>file_exists</code> returns TRUE that is concatenated as "1" in a PHP string. <code>$a</code> therefore contains \'a1\', so <code>${$a}</code> evaluates to <code>${a1}</code> which is \'The Coding Machine\' ;) !',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'quiz.phpstandard.q4' => 
+  array (
+    'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'What is the value of <code>$numbers</code> after executing this code?<pre><code>$numbers = [ 2, 4, 42 ];<br/>foreach ($numbers as $value){<br/>    $value /= 2;<br/>}</code></pre>',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 
+        array (
+          0 => '<code>[1,2,3]</code>',
+          1 => '<code>[2,4,42]</code>',
+          2 => '<code>[4,8,84]</code>',
+          3 => 'It outputs an error message',
+        ),
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => '1',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => 'The <code>$value</code> variable is passed by value to the foreach loop. Therefore, altering it does not alter the value inside the <code>$numbers</code> array. If you wanted to impact the <code>numbers</code> array, you should write:<pre><code>$numbers = [ 2, 4, 42 ];<br/>foreach ($numbers as &$value){<br/>    $value /= 2;<br/>}</code></pre>',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
+  'quiz.phpstandard.q5' => 
+  array (
+    'class' => 'TheCodingMachine\\Quiz\\Model\\Question',
+    'external' => false,
+    'weak' => false,
+    'constructor' => 
+    array (
+      0 => 
+      array (
+        'value' => 'What will be displayed in a browser when the following PHP code is executed:<pre><code>$foo = 1;<br/>switch ($foo) {<br/>    case 1:<br/>        echo "Bar";<br/>    default:<br/>        echo "Baz";<br/>}</code></pre>',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      1 => 
+      array (
+        'value' => 
+        array (
+          0 => 'Bar',
+          1 => 'Baz',
+          2 => 'BarBaz',
+          3 => '<i>Nothing</i>',
+        ),
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      2 => 
+      array (
+        'value' => '2',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+      3 => 
+      array (
+        'value' => 'Never forget the <code>break</code> statements in your <code>switch</code> conditions, otherwise, the next <code>case</code> will be executed too!',
+        'parametertype' => 'primitive',
+        'type' => 'string',
+        'metadata' => 
+        array (
+        ),
+      ),
+    ),
+  ),
   'quizController' => 
   array (
     'class' => 'TheCodingMachine\\Quiz\\Controllers\\QuizController',
@@ -1796,8 +2085,9 @@ $moufManager->addComponentInstances(array (
       array (
         'value' => 
         array (
-          0 => 'quiz.main.phpfig',
-          1 => 'quiz.main.phpninja',
+          0 => 'quiz.main.phpstandard',
+          1 => 'quiz.main.phpfig',
+          2 => 'quiz.main.phpninja',
         ),
         'parametertype' => 'object',
         'type' => 'string',
@@ -2455,6 +2745,13 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 }
 
 	/**
+	 * @return TheCodingMachine\Quiz\Model\Quiz
+	 */
+	 public static function getQuiz_main_phpstandard() {
+	 	return MoufManager::getMoufManager()->get('quiz.main.phpstandard');
+	 }
+
+	/**
 	 * @return TheCodingMachine\Quiz\Model\Question
 	 */
 	 public static function getQuiz_phpfig_q1() {
@@ -2529,6 +2826,41 @@ return rtrim(sys_get_temp_dir(), '/\\').'/mouftwigtemplatemain_'.$posixGetuid.st
 	 */
 	 public static function getQuiz_phpninja_q6() {
 	 	return MoufManager::getMoufManager()->get('quiz.phpninja.q6');
+	 }
+
+	/**
+	 * @return TheCodingMachine\Quiz\Model\Question
+	 */
+	 public static function getQuiz_phpstandard_q1() {
+	 	return MoufManager::getMoufManager()->get('quiz.phpstandard.q1');
+	 }
+
+	/**
+	 * @return TheCodingMachine\Quiz\Model\Question
+	 */
+	 public static function getQuiz_phpstandard_q2() {
+	 	return MoufManager::getMoufManager()->get('quiz.phpstandard.q2');
+	 }
+
+	/**
+	 * @return TheCodingMachine\Quiz\Model\Question
+	 */
+	 public static function getQuiz_phpstandard_q3() {
+	 	return MoufManager::getMoufManager()->get('quiz.phpstandard.q3');
+	 }
+
+	/**
+	 * @return TheCodingMachine\Quiz\Model\Question
+	 */
+	 public static function getQuiz_phpstandard_q4() {
+	 	return MoufManager::getMoufManager()->get('quiz.phpstandard.q4');
+	 }
+
+	/**
+	 * @return TheCodingMachine\Quiz\Model\Question
+	 */
+	 public static function getQuiz_phpstandard_q5() {
+	 	return MoufManager::getMoufManager()->get('quiz.phpstandard.q5');
 	 }
 
 	/**
