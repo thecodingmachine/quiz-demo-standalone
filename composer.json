@@ -1,0 +1,20 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:thecodingmachine/quiz-module.git"
+        }
+    ],
+    "require": {
+        "mouf/mouf": "~2.0",
+        "mouf/mvc.splash": "~7.0",
+        "thecodingmachine/quiz-module": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheCodingMachine\\Quiz\\": "src/TheCodingMachine/Quiz/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
